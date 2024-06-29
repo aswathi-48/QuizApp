@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { resetAllAction } from '../Redux/question-reducer';
 import { resetResultAction } from '../Redux/result-reducer';
 import { attempts_Number, earnPionts_Number, flagResult } from '../helper/helper';
+import '../styles/Result.css'
 
 const Result = () => {
 

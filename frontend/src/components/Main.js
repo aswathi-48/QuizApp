@@ -30,7 +30,7 @@ const Main = () => {
             <input ref={inputRef} type='text' placeholder='Username'></input>
         </form>
         <div className='start'>
-            <Link className='btn' to={'quiz'}>Start Quiz</Link>
+            <Link className='btn' to={'quiz'} onClick={startQuiz}>Start Quiz</Link>
         </div>
     </div>
   )
