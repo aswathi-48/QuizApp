@@ -12,4 +12,10 @@ import * as controller from '../controllers/controller.js'
 router.route('/questions')
     .get(controller.getQuestions)
     .post(controller.insertQuestions)
+    .delete(controller.dropQuestions)
+
+router.route('/result')    
+    .get(controller.getResult)
+    .post(controller.StoreResult)
+    .delete(controller.dropResult)
 export default router;
