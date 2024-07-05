@@ -1,4 +1,4 @@
-import Questions from "../models/questionSchema.js";
+import Questions from "../models/questionShema.js";
 import Results from "../models/resultSchema.js";
 import questions, { answers } from '../database/data.js'
 

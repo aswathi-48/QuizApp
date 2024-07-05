@@ -16,6 +16,6 @@ router.route('/questions')
 
 router.route('/result')    
     .get(controller.getResult)
-    .post(controller.StoreResult)
+    .post(controller.storeResult)
     .delete(controller.dropResult)
 export default router;
