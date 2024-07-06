@@ -19,8 +19,9 @@ export const useFetchQuestion = () => {
                const [{ questions, answers }] = await getServerData(`${process.env.REACT_APP_SERVER_HOSTNAME}/api/questions`,(data) => data)
                 console.log(questions, answers);
                 if (question.length > 0) {
-                    setGetdata(prev => ({...prev, isLoading: false, apiData: question }));
-                    dispatch(Action.startExamAction({question, answers}));
+                    setGetdata(prev => ({...prev, isLoading: false, apiData: questions }));
+                    dispatch(Action.startExamAction({ question : questions, answers}));
+
                 } else {
                     throw new Error('No Question Available');
                 } 
